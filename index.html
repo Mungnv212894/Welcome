@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter Your Name</title>
+</head>
+<body>
+    <h1>What's your name?:</h1>
+    <input type="text" id="name-input">
+    <button onclick="submitName()">Submit</button>
+
+    <script>
+        function submitName() {
+            var name = document.getElementById("name-input").value;
+            window.location.href = "/welcome?name=" + name;
+        }
+    </script>
+</body>
+</html>
